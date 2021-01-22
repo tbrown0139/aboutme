@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html  >
+<html>
 <head>
+  <!-- Copyright Trevor Brown -->
   
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,8 +38,22 @@
             <div class="col-12 col-md">
                 <div class="text-wrapper">
                     <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>Hi all, I'm Trevor 👋</strong></h1>
+                  <Typewriter
+  onInit={(typewriter) => {
+    typewriter.typeString('Hello World!')
+      .callFunction(() => {
+        console.log('String typed out!');
+      })
+      .pauseFor(2500)
+      .deleteAll()
+      .callFunction(() => {
+        console.log('All strings were deleted');
+      })
+      .start();
+  }}
+/>
                     <p class="mbr-text mbr-fonts-style display-7">
-                        A passionate Software Developer 🚀 having an experience of building Web and Mobile applications with Nodejs / Swift / Objective C / HTML / PHP / CSS and some other cool libraries and frameworks.</p>
+                        A passionate Software Developer 🚀 having an experience of building Web and Mobile applications with  Swift / Objective C / HTML / PHP / CSS and some other cool libraries and frameworks.</p>
                     <div class="mbr-section-btn mt-3"><a class="btn btn-secondary display-4" href="mailto:trevor@brownbros.org">Contact Me</a>
                         <a class="btn btn-black-outline display-4" href="https://brownbros.org">Brown Brothers Development</a></div>
                 </div>
@@ -47,6 +62,6 @@
     </div>
 </section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/v" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;"> </p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
-  
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </body>
 </html>
